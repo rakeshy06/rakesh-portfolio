@@ -16,14 +16,16 @@ app = FastAPI(title="Portfolio Chatbot API")
 # Allow your portfolio website to call this API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://rakesh-portfolio-psi-ivory.vercel.app/",                     # your portfolio domain
-        "https://rakesh-portfolio-8kmr.onrender.com",   # your Render service URL
+   allow_origins=[
+        "https://rakesh-portfolio-psi-ivory.vercel.app",  # Your live Vercel domain
+        "https://rakesh-portfolio-8kmr.onrender.com",     # Your Render backend
         "http://localhost:3000",
+        "http://127.0.0.1:5500",
         "http://localhost:5500",
-        "http://127.0.0.1:5500",],
+    ],
     allow_credentials=True,
-    allow_methods=["GET", "POST", "OPTIONS"],
-    allow_headers=["Content-Type", "Accept"],
+    allow_methods=["*"],  # Allows GET, POST, OPTIONS, etc.
+    allow_headers=["*"],  # Allows all headers
 )
 
 # Serve HTML, CSS, JS from the static folder
