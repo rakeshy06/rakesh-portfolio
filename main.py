@@ -22,6 +22,7 @@ app.add_middleware(
         "http://localhost:3000",
         "http://127.0.0.1:5500",
         "http://localhost:5500",
+        "https://*.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],  # Allows GET, POST, OPTIONS, etc.
@@ -106,3 +107,7 @@ def chat(request: ChatRequest):
             status_code=500,
             detail="The AI assistant is temporarily unavailable. Please try again later."
         )
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
