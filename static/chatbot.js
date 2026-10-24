@@ -196,7 +196,9 @@
       const endpoint = `${baseUrl}/api/chat`;
 
       try {
-  const response = await fetch(endpoint, {
+  const response = await fetch(
+     `${window.PORTFOLIO_CONFIG.API_BASE_URL}/api/chat`,
+    {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
