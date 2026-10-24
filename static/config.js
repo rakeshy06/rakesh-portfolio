@@ -1,7 +1,7 @@
 /**PORTFOLIO AI CHATBOT - FRONTEND CONFIGURATION */
 
   const CONFIG = {
-  API_BASE_URL: "https://your-backend-name.onrender.com",
+  API_BASE_URL: "",
 
   /**
    * Bot Identity & Welcome Options

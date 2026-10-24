@@ -16,7 +16,9 @@ app = FastAPI(title="Portfolio Chatbot API")
 # Allow your portfolio website to call this API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://yourportfolio.com",       # your production domain
+        "http://localhost:3000",           # optional for local testing
+        "http://127.0.0.1:5500"],
     allow_credentials=True,
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type", "Accept"],
