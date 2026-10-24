@@ -192,13 +192,11 @@
       this.setLoading(true);
 
       // Construct API endpoint
-      const baseUrl = this.config.API_BASE_URL.replace(/\/$/, "");
+      const baseUrl = (window.PORTFOLIO_CONFIG?.API_BASE_URL || this.config.API_BASE_URL).replace(/\/$/, "");
       const endpoint = `${baseUrl}/api/chat`;
 
       try {
-  const response = await fetch(
-     `${window.PORTFOLIO_CONFIG.API_BASE_URL}/api/chat`,
-    {
+  const response = await fetch(endpoint, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
