@@ -224,14 +224,19 @@
 
   this.conversationHistory.push({ role: "assistant", content: answer });
 
+
+
 } catch (error) {
   console.error("Chatbot API Request Failed:", error);
 
   this.appendMessage({
     role: "assistant",
-    content: "⚠️ **Connection Error**: Unable to reach the backend server right now. " +
-             "Please ensure the FastAPI service is running locally on port 8000 or that your live backend URL in `config.js` is correct."
+    content: "⚠️ **Backend is waking up** (free Render hosting sleeps after inactivity).\n\n" +
+             "Please wait 30–60 seconds and try again. The first request after sleep is slow; subsequent ones are fast."
   });
+
+
+
 
       } finally {
         this.setLoading(false);
