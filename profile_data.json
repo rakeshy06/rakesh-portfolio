@@ -1,0 +1,87 @@
+{
+  "name": "Rakesh Yanamandrs",
+  "role": "AI Integrated FullStack Developer",
+  "location": "Bangalore, India",
+  "summary": "MCA graduate (2025) currently pursuing AI-Integrated Python Full Stack Development training, with technical skills in Python, SQL, HTML, CSS, JavaScript, AWS, and AI fundamentals. Eager to apply programming and web development skills to real-world projects and begin a career as a AI Integrated Python Full Stack Developer.",
+  "education": [
+    {
+      "degree": "MCA",
+      "institution": "Annamacharya Institute of Technology and Sciences",
+      "year": "2025"
+    }
+  ],
+  "skills": [
+    "Python",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "FastAPI",
+    "SQL",
+    "Git",
+    "GitHub",
+    "Artificial Intelligence"
+  ],
+  "projects": [
+   {
+    "title": "AI-Powered RAG Chatbot",
+    "domain": "Natural Language Processing & Generative AI",
+    "description": "An enterprise-grade conversational AI pipeline built using Retrieval-Augmented Generation (RAG) to query complex documents with grounded citations and minimal hallucination.",
+    "features": [
+      "Dynamic document ingestion, recursive chunking, and embedding generation via vector databases.",
+      "Hybrid search combining semantic vector retrieval with keyword-based re-ranking.",
+      "Context-aware response streaming with source attribution and link citations.",
+      "Conversation session state tracking and guardrails to prevent hallucination."
+    ],
+    "tech": ["Python", "LangChain", "Google Gemini API", "ChromaDB", "FastAPI", "RAG Architecture"],
+    "liveDemo": null,
+    "github": "https://github.com/rakeshy06"
+    },
+    {
+    "title": "Vehicle Accident Prevention System",
+    "domain": "Embedded Systems / Computer Vision & IoT",
+    "description": "An automated multi-modal safety mechanism designed to detect driver drowsiness, lane drift, and obstacle proximity to trigger immediate physical warnings and speed mitigation.",
+    "features": [
+      "Real-time facial landmark detection to identify microsleeps and eye closure duration.",
+      "Ultrasonic and LiDAR proximity sensing for real-time obstacle collision estimation.",
+      "Hardware-level relay integration for speed regulation and audible buzzer alerts.",
+      "Automatic GPS-tagged emergency distress signal dispatch over GSM/telemetry networks."
+    ],
+    "tech": ["Python", "IoT", "Arduino / Raspberry Pi", "MQ-3 Sensors", "Embedded Systems"],
+    "liveDemo": null, 
+    "github": "https://github.com/rakeshy06"
+    },
+    {
+    "title": "AI Finance Manager",
+    "domain": "FinTech & Predictive AI",
+    "description": "An intelligent personal finance dashboard that automates expense categorization, anomaly detection, and predictive cash flow forecasting using fine-tuned machine learning models.",
+    "features": [
+      "Automated bank statement parsing and zero-shot transaction classification.",
+      "Predictive spending forecasts and monthly recurring expense anomaly detection.",
+      "Natural language financial assistant for budget planning and investment insights.",
+      "End-to-end data encryption and compliant tokenized credential storage."
+    ],
+    "tech": ["AI", "HTML", "JavaScript", "Python", "FastAPI", "PostgreSQL", "CSS"],
+    "liveDemo": null,
+    "github": "https://github.com/rakeshy06"
+    },
+    {
+    "title": "AI-Integrated Developer Portfolio",
+    "domain": "Frontend & AI Development",
+    "description": "A modern, interactive developer portfolio featuring a custom RAG-powered chatbot to interactively showcase technical projects, experience, and certifications.",
+    "features": [
+      "Custom conversational AI chatbot running context-aware queries about skills and background.",
+      "Strict system prompt boundaries preventing leaks of sensitive personal information.",
+      "Fully responsive, dark-mode-first aesthetic with smooth CSS transitions.",
+      "Optimized asset loading and accessible modal dialogs."
+    ],
+    "tech": ["HTML5", "CSS3", "JavaScript", "Python", "FastAPI", "Gemini API"],
+    "liveDemo": "https://rakesh.dev",
+    "github": "https://github.com/rakeshy06"
+    }
+  ],
+  "contact": {
+    "email": "yrk4246@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/rakesh-yanamandra-5a1565376/",
+    "github": "https://github.com/rakeshy06"
+  }
+}
