@@ -7,7 +7,7 @@
     constructor() {
       // Configuration
       this.config = window.PORTFOLIO_CONFIG || {
-        API_BASE_URL: "",
+        API_BASE_URL: "https://rakesh-portfolio-8kmr.onrender.com",
         BOT_NAME: "Rakesh's AI Assistant",
         WELCOME_MESSAGE: "Hello! How can I assist you with Rakesh's portfolio today?",
         SUGGESTED_QUESTIONS: []
