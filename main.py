@@ -17,7 +17,7 @@ app = FastAPI(title="Portfolio Chatbot API")
 app.add_middleware(
     CORSMiddleware,
    allow_origins=[
-        "https://rakesh-portfolio-psi-ivory.vercel.app",  # Your live Vercel domain
+        "https://rakiiy.vercel.app",  # Your live Vercel domain
         "https://rakesh-portfolio-8kmr.onrender.com",     # Your Render backend
         "http://localhost:3000",
         "http://127.0.0.1:5500",
@@ -34,6 +34,11 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
 # Load your profile data
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+PROFILE_PATH = BASE_DIR / "profile_data.json"
+
 try:
     with open("profile_data.json", "r", encoding="utf-8") as file:
         profile_data = json.load(file)
